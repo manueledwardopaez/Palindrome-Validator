@@ -6,16 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="resources/css/app.css">
     <title>Palindromɘ Pad</title>
-    <h1>Palindromɘ Pad</h1>
+
 </head>
 
 <body>
 
-    <textarea id="text" placeholder="Texto" cols="30" rows="10"></textarea>
-    <br>
-    <button id="send_buttom" onclick="palindromeValidator()">Boton</button>
+    <div class="conteiner">
+        <header>
 
-    <div id="result"></div>
+            <div class="title">
+                <h1>PP</h1>
+                <p>Palindrome</p>
+            </div>
+            <div class="buttons">
+                <a href="#" class="btn">Settings</a>
+                <a href="#" class="btn">Change View</a>
+            </div>
+
+        </header>
+
+        <section>
+            <div class="phrase">
+                <p><strong>Phrase:</strong></p>
+                <p id="result"></p>
+            </div>
+
+            <textarea class="caja" id="text" placeholder="Text" cols="30" rows="10"></textarea>
+            <br>
+            <button class="validate" id="send_buttom" onclick="palindromeValidator()">Boton</button>
+
+
+        </section>
+
+
+    </div>
+
+
+
+
 
     <script src="resources/js/app.js"></script>
 
